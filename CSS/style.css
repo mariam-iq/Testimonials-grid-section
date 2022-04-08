@@ -12,11 +12,12 @@ body {
 }
 
 .container {
-    padding: 20px 15px;
+    padding: 120px;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     background-color: #edf2f8;
+    border-radius: 8px;
 
 }
 
@@ -176,7 +177,7 @@ body {
 .attribution {
     font-size: 13px;
     padding: 8px;
-    margin-left: 33%;
+    margin-left: 38%;
 }
 
 .attribution a {
