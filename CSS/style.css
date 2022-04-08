@@ -1,0 +1,184 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
+}
+
+.container {
+    padding: 20px 15px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #edf2f8;
+
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container .side {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 75%;
+    max-width: calc(75% - 10px);
+}
+
+.container .side .first-card,
+.container .side .second-card,
+.container .side .third-card,
+.container .side .fourth-card,
+.container .fifth-card {
+    padding: 25px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px 0px #8888888c;
+}
+
+.container .side .first-card {
+    color: #fff;
+    max-width: calc((100% / 3) * 2);
+    flex: calc((100% / 3) * 2);
+    background-image: url('/images/bg-pattern-quotation.svg');
+    background-color: #733fc8;
+    background-repeat: no-repeat;
+    background-position-x: 82%;
+
+}
+
+.container .side .second-card {
+    background-color: #49556b;
+    color: #fff;
+
+}
+
+.container .side .third-card {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.container .side .fourth-card {
+    background-color: #18202d;
+    color: #fff;
+
+}
+
+.container .side .second-card,
+.container .side .third-card {
+    flex: calc((100% / 3) - 40px);
+    max-width: calc((100% / 3) - 40px);
+}
+
+.container .side .first-card,
+.container .side .fourth-card {
+    flex: calc((100% / 3) * 2);
+    max-width: calc((100% / 3) * 2);
+}
+
+.container .fifth-card {
+    background-color: #fff;
+    color: #000;
+    flex: 25%;
+    max-width: calc(25% - 10px);
+
+}
+
+@media (max-width: 600px) {
+
+    .container .fifth-card,
+    .container .side .first-card,
+    .container .side .second-card,
+    .container .side .third-card,
+    .container .side .fourth-card,
+    .container .side {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.container .top {
+    display: flex;
+}
+
+.container .top .photo {
+    margin: -4px 10px 0px 0px;
+}
+
+.container .top .photo img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.container .top .names {
+    font-size: 14px;
+}
+
+.container .top .names h5 {
+    margin: -3px 0px 3px 0px;
+}
+
+.container .bottom {
+    margin-top: 15px;
+}
+
+.container .bottom .review {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.container .first-card .top .names h6,
+.container .first-card .bottom .review {
+    color: #af96d7;
+}
+
+.container .second-card .top .names h6,
+.container .second-card .bottom .review {
+    color: #7f8083;
+}
+
+.container .third-card .top .names h6,
+.container .third-card .bottom .review,
+.container .fifth-card .top .names h6,
+.container .fifth-card .bottom .review {
+    color: #c1c1c3;
+}
+
+.container .fourth-card .top .names h6,
+.container .fourth-card .bottom .review {
+    color: #696e79;
+}
+
+.attribution {
+    font-size: 13px;
+    padding: 8px;
+    margin-left: 33%;
+}
+
+.attribution a {
+    text-decoration: none;
+}
